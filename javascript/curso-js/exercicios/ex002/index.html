@@ -1,0 +1,44 @@
+<!--Vamos olhar com atenção a linha 37, onde criamos o botão. Existe um parâmetro na
+tag <button> que é o onclick. Note que dentro das aspas eu coloquei o nome de um
+evento que será tratado pelo JavaScript. A ligação entre o HTML e o JS será pelo
+nome desse evento (não esqueça dos parênteses no final, mais tarde você entenderá
+pra que eles servem).
+Agora analise a linha 39. Ela é exatamente a definição da função que tratará do
+evento. Ao contrário do que fizemos no capítulo anterior, o window.alert() não
+ está sozinho dentro do <script>. Ele está
+justamente dentro da função (identificada pela palavra function do JS).
+Toda função em JS é relacionada a um bloco, que nada mais é do que um conjunto
+de comandos que estão entre chaves { }. Tudo o que estiver entre chaves em JS,
+chamaremos de bloco.
+Sendo assim, o comando que está na linha 40 não vai executar assim que a página
+for carregada. No lugar disso, ela será executada só quando a função será disparada,
+e o modo de disparo nesse caso será feito na linha 37, pelo evento onclick do
+botão. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados em JS</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+        button {
+            font-size: 15pt;
+            padding: 25px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados v1.0</h1>
+    <button onclick="clicou()">Clique em mim</button>
+    <script>
+        function clicou() {
+            window.alert('Você clicou no botão!')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.bordas{
+    border-width: 5px;/*Espessura da borda*/
+    border-style: solid;/*Estilo da bordar*/
+    border-color: red;/*Cor da Bordar*/
+    /*border-radius: 5px;*//*arredondar as bordas*/
+
+}
+.quadrado{
+    width: 100px;/*largura*/
+    height:100px ;/*altura*/
+    background-color: yellow;
+}
+
+.circulo{
+    border-radius: 50%;
+}
+
+.dotted{
+    border-style: dotted;
+}
+.dashed{
+    border-style: dashed;
+}
+.solid{
+    border-style: solid;
+}
+.none{
+    border-style: none;
+}
+.hidden{
+    border-style: hidden;
+}
+
+/*Aqui eu somente quero que a lateral direita fique vermelha da borda*/
+.right{
+    border-width: 5px;
+    border-style: solid;
+    border-right-color:red;
+}
+
+/*Aqui eu somente quero que a lateral esquerda fique vermelha da borda*/
+
+.left{
+    border-width: 5px;
+    border-style: solid;
+    border-left-color:red;
+}
+
+/*Aqui eu somente quero que em cima  fique vermelha da borda*/
+
+.top{
+    border-width: 5px;
+    border-style: solid;
+    border-top-color:red;
+}
+
+/*Aqui eu somente quero que a lateral embaixo fique vermelha da borda*/
+
+.bottom{
+    border-width: 5px;
+    border-style: solid;
+    border-bottom-color:red;
+}
+
+.arco-iris{
+    border-width: 15px 2px 5px 10px;
+    border-style: solid;
+    border-color:rebeccapurple green blue yellow;  
+}
+
+.borda{
+    border: 5px dashed blue;
+}

@@ -1,0 +1,53 @@
+<!--A linha 47 tem o método window.prompt(), que gera uma solicitação para que o
+usuário digite o seu nome. Essa janela se parece bastante com um alerta, mas tem a
+diferença de incluir uma caixa disponível para aceitar a digitação.
+Mas como vamos guardar o nome do visitante? Aí entra o início da linha 47. A
+instrução let nome serve para declarar uma variável chamada nome, que vai guardar
+o nome que a pessoa vai digitar.
+Em JavaScript, o símbolo de = não se lê como “igual”. Na verdade, sempre que você
+encontrar um =, leia como “recebe”.
+Lendo então a linha 47 depois de aprender tudo isso, ficamos com:
+let nome = window.prompt('Qual é seu nome?’)
+“A variável nome vai receber o resultado de um prompt que vai aparecer na janela
+perguntando qual é o nome do usuário”.
+Já na linha 48, temos também uma novidade. Note que dentro do alert(), usamos
+crases para delimitar a string dessa vez.
+window.alert(`Olá, ${nome}! É um prazer te conhecer!`)
+Uma string que está entre crases tem um nome especial: se chama template
+string. Esse tipo de string é uma das novidades do ECMAScript moderno e quebram
+um galho gigante!
+Dentro de uma template string podemos usar placeholders no seu interior. Um
+placeholder é representado pelos símbolos ${} e podem ser usados para facilitar a
+exibição de conteúdos de variáveis ou expressões.
+Olhando a linha 48, perceba que ${nome} vai ser substituído pelo conteúdo da
+variável nome, criada na linha 47 e que está guardando o nome da pessoa que está
+rodando o script.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados em JS</title>
+    <style>
+        body {
+            font:12pt Arial;
+        }
+        button {
+            font-size:12pt;
+            padding: 30px ;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados</h1>
+    <button onclick="inicio()">Clique para começar</button>
+    <script>
+        function inicio() {
+            let nome = window.prompt ('Qual é o seu nome?')
+            window.alert(`Olá, ${nome}! É um prazer te conhecer!`)
+        }
+    </script>
+</body>
+</html>

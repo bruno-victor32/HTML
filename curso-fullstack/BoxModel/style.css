@@ -1,0 +1,17 @@
+body{ /*Por padrão o body tem margin e padding,estou zerando eles*/
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: red;
+    padding: 5px;/*O padding e a distancia da borda do container,para o conteúdo do container que e o nosso content*/
+    border: 5px solid blue;
+    margin: 10px;
+}
+
+.content{
+    background-color: #addd;
+    border: 5px solid green;
+    padding: 5px;
+}
