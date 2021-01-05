@@ -10,8 +10,11 @@
     <p>Você está vendo a imagem completa?Experimente ampliar o tamanho da sua janela para aproveitar 
         a melhor experiência.
     </p>
-    <img src="img/paisagem-g.png" alt="Grande">
-    <img src="img/paisagem-m.png" alt="Media">
-    <img src="img/paisagem-p.png" alt="Pequena">
+    
+    <picture>
+        <source media="(max-width:750px )" srcset="imagem/paisagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagem/paisagem-m.png" type="image/png">
+        <img src="imagem/paisagem-g.png" alt="Imagem flexível" >
+    </picture>
 </body>
 </html>
